@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C8729931D8FAFF7007048FB /* MessageReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8729921D8FAFF7007048FB /* MessageReciever.swift */; };
 		1CD1F57F1D8F282E00CBFD68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1F57E1D8F282E00CBFD68 /* AppDelegate.swift */; };
-		1CD1F5811D8F282E00CBFD68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1F5801D8F282E00CBFD68 /* ViewController.swift */; };
-		1CD1F5841D8F282E00CBFD68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD1F5821D8F282E00CBFD68 /* Main.storyboard */; };
 		1CD1F5861D8F282E00CBFD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD1F5851D8F282E00CBFD68 /* Assets.xcassets */; };
 		1CD1F5891D8F282E00CBFD68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD1F5871D8F282E00CBFD68 /* LaunchScreen.storyboard */; };
-		1CD1F5941D8F282E00CBFD68 /* OvoEnigmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1F5931D8F282E00CBFD68 /* OvoEnigmaTests.swift */; };
+		1CD1F5941D8F282E00CBFD68 /* AlphabetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1F5931D8F282E00CBFD68 /* AlphabetTests.swift */; };
+		1CD1F5A01D8F286800CBFD68 /* EnigmaMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1F59F1D8F286800CBFD68 /* EnigmaMachine.swift */; };
+		1CD1F5A21D8F287B00CBFD68 /* OvoEnigmaMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1F5A11D8F287B00CBFD68 /* OvoEnigmaMachine.swift */; };
+		1CE331421D8F2CDC009231D2 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE331411D8F2CDC009231D2 /* Alphabet.swift */; };
+		1CE331441D8F2CFC009231D2 /* Rotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE331431D8F2CFC009231D2 /* Rotor.swift */; };
+		1CE331461D8F2D18009231D2 /* RotorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE331451D8F2D18009231D2 /* RotorTests.swift */; };
+		F21143800392F4A3E669574B /* Pods_OvoEnigmaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3D6D8F7CD88C396F21FB06 /* Pods_OvoEnigmaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171275A807D8A98D56C3CE30 /* Pods-OvoEnigmaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OvoEnigmaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OvoEnigmaTests/Pods-OvoEnigmaTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C8729921D8FAFF7007048FB /* MessageReciever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageReciever.swift; sourceTree = "<group>"; };
 		1CD1F57B1D8F282E00CBFD68 /* OvoEnigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvoEnigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD1F57E1D8F282E00CBFD68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CD1F5801D8F282E00CBFD68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CD1F5831D8F282E00CBFD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CD1F5851D8F282E00CBFD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CD1F5881D8F282E00CBFD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CD1F58A1D8F282E00CBFD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD1F58F1D8F282E00CBFD68 /* OvoEnigmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoEnigmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CD1F5931D8F282E00CBFD68 /* OvoEnigmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvoEnigmaTests.swift; sourceTree = "<group>"; };
+		1CD1F5931D8F282E00CBFD68 /* AlphabetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetTests.swift; sourceTree = "<group>"; };
 		1CD1F5951D8F282E00CBFD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD1F59F1D8F286800CBFD68 /* EnigmaMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnigmaMachine.swift; path = OvoEnigma/EnigmaMachine.swift; sourceTree = "<group>"; };
+		1CD1F5A11D8F287B00CBFD68 /* OvoEnigmaMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvoEnigmaMachine.swift; sourceTree = "<group>"; };
+		1CE331411D8F2CDC009231D2 /* Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
+		1CE331431D8F2CFC009231D2 /* Rotor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotor.swift; sourceTree = "<group>"; };
+		1CE331451D8F2D18009231D2 /* RotorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotorTests.swift; sourceTree = "<group>"; };
+		5B61157A8AB84F07425B239B /* Pods-OvoEnigmaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OvoEnigmaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OvoEnigmaTests/Pods-OvoEnigmaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD3D6D8F7CD88C396F21FB06 /* Pods_OvoEnigmaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OvoEnigmaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21143800392F4A3E669574B /* Pods_OvoEnigmaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +72,12 @@
 		1CD1F5721D8F282E00CBFD68 = {
 			isa = PBXGroup;
 			children = (
-				1CD1F57D1D8F282E00CBFD68 /* OvoEnigma */,
+				1CD1F59E1D8F284800CBFD68 /* OvoEnigma */,
+				1CD1F57D1D8F282E00CBFD68 /* Resources */,
 				1CD1F5921D8F282E00CBFD68 /* OvoEnigmaTests */,
 				1CD1F57C1D8F282E00CBFD68 /* Products */,
+				78174388479DF3B181DCD678 /* Pods */,
+				CA13E53A4843503002E40A23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,26 +90,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1CD1F57D1D8F282E00CBFD68 /* OvoEnigma */ = {
+		1CD1F57D1D8F282E00CBFD68 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				1CD1F57E1D8F282E00CBFD68 /* AppDelegate.swift */,
-				1CD1F5801D8F282E00CBFD68 /* ViewController.swift */,
-				1CD1F5821D8F282E00CBFD68 /* Main.storyboard */,
 				1CD1F5851D8F282E00CBFD68 /* Assets.xcassets */,
 				1CD1F5871D8F282E00CBFD68 /* LaunchScreen.storyboard */,
 				1CD1F58A1D8F282E00CBFD68 /* Info.plist */,
 			);
+			name = Resources;
 			path = OvoEnigma;
 			sourceTree = "<group>";
 		};
 		1CD1F5921D8F282E00CBFD68 /* OvoEnigmaTests */ = {
 			isa = PBXGroup;
 			children = (
-				1CD1F5931D8F282E00CBFD68 /* OvoEnigmaTests.swift */,
+				1CD1F5931D8F282E00CBFD68 /* AlphabetTests.swift */,
 				1CD1F5951D8F282E00CBFD68 /* Info.plist */,
+				1CE331451D8F2D18009231D2 /* RotorTests.swift */,
 			);
 			path = OvoEnigmaTests;
+			sourceTree = "<group>";
+		};
+		1CD1F59E1D8F284800CBFD68 /* OvoEnigma */ = {
+			isa = PBXGroup;
+			children = (
+				1CD1F59F1D8F286800CBFD68 /* EnigmaMachine.swift */,
+				1CD1F5A11D8F287B00CBFD68 /* OvoEnigmaMachine.swift */,
+				1CE331411D8F2CDC009231D2 /* Alphabet.swift */,
+				1CE331431D8F2CFC009231D2 /* Rotor.swift */,
+				1C8729921D8FAFF7007048FB /* MessageReciever.swift */,
+			);
+			name = OvoEnigma;
+			sourceTree = "<group>";
+		};
+		78174388479DF3B181DCD678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B61157A8AB84F07425B239B /* Pods-OvoEnigmaTests.debug.xcconfig */,
+				171275A807D8A98D56C3CE30 /* Pods-OvoEnigmaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA13E53A4843503002E40A23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD3D6D8F7CD88C396F21FB06 /* Pods_OvoEnigmaTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CD1F59B1D8F282E00CBFD68 /* Build configuration list for PBXNativeTarget "OvoEnigmaTests" */;
 			buildPhases = (
+				807DD9D8EC2ADA8767ABEC23 /* [CP] Check Pods Manifest.lock */,
 				1CD1F58B1D8F282E00CBFD68 /* Sources */,
 				1CD1F58C1D8F282E00CBFD68 /* Frameworks */,
 				1CD1F58D1D8F282E00CBFD68 /* Resources */,
+				EA57E8189D903BB05165DFE9 /* [CP] Embed Pods Frameworks */,
+				6048F0588C12149E4658101C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,7 +227,6 @@
 			files = (
 				1CD1F5891D8F282E00CBFD68 /* LaunchScreen.storyboard in Resources */,
 				1CD1F5861D8F282E00CBFD68 /* Assets.xcassets in Resources */,
-				1CD1F5841D8F282E00CBFD68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +239,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6048F0588C12149E4658101C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OvoEnigmaTests/Pods-OvoEnigmaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807DD9D8EC2ADA8767ABEC23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA57E8189D903BB05165DFE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OvoEnigmaTests/Pods-OvoEnigmaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1CD1F5771D8F282E00CBFD68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CD1F5811D8F282E00CBFD68 /* ViewController.swift in Sources */,
+				1CD1F5A01D8F286800CBFD68 /* EnigmaMachine.swift in Sources */,
+				1CD1F5A21D8F287B00CBFD68 /* OvoEnigmaMachine.swift in Sources */,
+				1C8729931D8FAFF7007048FB /* MessageReciever.swift in Sources */,
+				1CE331421D8F2CDC009231D2 /* Alphabet.swift in Sources */,
 				1CD1F57F1D8F282E00CBFD68 /* AppDelegate.swift in Sources */,
+				1CE331441D8F2CFC009231D2 /* Rotor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CD1F5941D8F282E00CBFD68 /* OvoEnigmaTests.swift in Sources */,
+				1CE331461D8F2D18009231D2 /* RotorTests.swift in Sources */,
+				1CD1F5941D8F282E00CBFD68 /* AlphabetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1CD1F5821D8F282E00CBFD68 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CD1F5831D8F282E00CBFD68 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1CD1F5871D8F282E00CBFD68 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,6 +439,7 @@
 		};
 		1CD1F59C1D8F282E00CBFD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B61157A8AB84F07425B239B /* Pods-OvoEnigmaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = OvoEnigmaTests/Info.plist;
@@ -359,6 +452,7 @@
 		};
 		1CD1F59D1D8F282E00CBFD68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171275A807D8A98D56C3CE30 /* Pods-OvoEnigmaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = OvoEnigmaTests/Info.plist;
@@ -388,6 +482,7 @@
 				1CD1F59A1D8F282E00CBFD68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CD1F59B1D8F282E00CBFD68 /* Build configuration list for PBXNativeTarget "OvoEnigmaTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +491,7 @@
 				1CD1F59D1D8F282E00CBFD68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
