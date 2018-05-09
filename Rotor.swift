@@ -32,18 +32,18 @@ struct Rotor<Symbol: Hashable> {
     }
     
     func scrambleForwards(symbol: Symbol) -> Symbol {
-        let alphabetPosition = alphabet.getIndex(symbol)
+        let alphabetPosition = alphabet.getIndex(symbol: symbol)
         return sequence[(alphabetPosition + currentPosition) % alphabet.size()]
     }
     
     func scrambleBackwards(symbol: Symbol) -> Symbol {
         var offset  : Int = 0
-        for (index, _) in sequence.enumerate() {
+        for (index, _) in sequence.enumerated() {
             let offsetSymbol = sequence[(index + currentPosition) % sequence.count]
             if offsetSymbol == symbol {
                 offset = index
             }
         }
-        return alphabet.getSymbol(offset)
+        return alphabet.getSymbol(index: offset)
     }
 }

@@ -17,7 +17,7 @@ struct Alphabet<Symbol: Hashable> {
     private var symbolMap: [Symbol : Int] = [:]
     
     init(orderedSymbols: [Symbol]) {
-        for (index, c) in orderedSymbols.enumerate() {
+        for (index, c) in orderedSymbols.enumerated() {
             symbolArray.append(c)
             symbolMap[c] = index
         }

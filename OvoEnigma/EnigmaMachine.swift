@@ -21,23 +21,23 @@ struct EnigmaMachine<Symbol: Hashable> {
         self.reflector = reflector
     }
     
-    func encrypt(message: [Symbol]) -> [Symbol] {
+    mutating func encrypt(message: [Symbol]) -> [Symbol] {
         var encryptedMessage : [Symbol] = []
         for symbol in message {
             self.applyRotations()
-            encryptedMessage.append(self.encryptSymbol(symbol))
+            encryptedMessage.append(self.encryptSymbol(symbol: symbol))
         }
         return encryptedMessage
     }
     
-    private func encryptSymbol(symbol: Symbol) -> Symbol {
+    private mutating func encryptSymbol(symbol: Symbol) -> Symbol {
         var currentSymbol = symbol
         for r in rotors {
-            currentSymbol = r.scrambleForwards(currentSymbol)
+            currentSymbol = r.scrambleForwards(symbol: currentSymbol)
         }
-        currentSymbol = reflector.scrambleForwards(currentSymbol)
-        for r in rotors.reverse() {
-            currentSymbol = r.scrambleBackwards(currentSymbol)
+        currentSymbol = reflector.scrambleForwards(symbol: currentSymbol)
+        for r in rotors.reversed() {
+            currentSymbol = r.scrambleBackwards(symbol: currentSymbol)
         }
         return currentSymbol
     }

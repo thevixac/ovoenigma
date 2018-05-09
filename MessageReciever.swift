@@ -14,20 +14,20 @@ import Foundation
  */
 struct MessageReciever {
     var messageCb: ((String) -> Void)
-    var url: NSURL
+    var url: URL
     
-    init(url: NSURL, cb: ((String) -> Void)) {
+    init(url: URL, cb: @escaping ((String) -> Void)) {
         self.url = url
         self.messageCb = cb
     }
     
     func requestMessage() {
-        let task = NSURLSession.sharedSession().dataTaskWithURL(self.url) {(data, response, error) in
-            guard let d = data  where error == nil else {
+        let task = URLSession.shared.dataTask(with: self.url) {(data, response, error) in
+            guard let d = data, error == nil else {
                 print("Message reciever failed to get message from \(self.url.absoluteString)")
                 return
             }
-            guard let message = String(data: d, encoding: NSUTF8StringEncoding) else {
+            guard let message = String(data: d, encoding: String.Encoding.utf8) else {
                 print("Message reciever failed to parse data into a message.")
                 return
             }

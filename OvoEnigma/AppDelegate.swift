@@ -22,15 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Here we showcase that the OvoEnigmaMachine can successfuly encrypt a message and another OvoEnigmaMachine can successfully decrypt it back into the original message.
         
-        reciever = MessageReciever(url: NSURL(string: "http://www.randomtext.me/download/txt/gibberish/p-1/10-20")!) { message in
+        reciever = MessageReciever(url: URL(string: "http://www.randomtext.me/download/txt/gibberish/p-1/10-20")! as URL) { message in
             let enigma = OvoEnigmaMachine()
             
-            let inputMessage = OvoEnigmaMachine.clean(message)
+            let inputMessage = OvoEnigmaMachine.clean(message: message)
             print("Message to encrypt is \(inputMessage).")
-            let encrypted = enigma.encrypt(inputMessage)
+            let encrypted = enigma.encrypt(message: inputMessage)
             print("Encrypted message is '\(encrypted)'.")
             let secondEnigma = OvoEnigmaMachine()
-            let decrypted = secondEnigma.encrypt(encrypted)
+            let decrypted = secondEnigma.encrypt(message: encrypted)
             print("Decrypted message is \(decrypted).")
             
             if inputMessage == decrypted {

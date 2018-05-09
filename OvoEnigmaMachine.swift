@@ -18,7 +18,7 @@ class OvoEnigmaMachine {
     
     init() {
         
-        let alphabet =  Alphabet(orderedSymbols: Array(OvoEnigmaMachine.lowercaseAlphabet.characters))
+        let alphabet =  Alphabet(orderedSymbols: Array(OvoEnigmaMachine.lowercaseAlphabet))
         
         let rotorWirings = [
             "ekmflgdqvzntowyhxuspaibrcj",
@@ -26,9 +26,9 @@ class OvoEnigmaMachine {
             "bdfhjlcprtxvznyeiwgakmusqo"
         ]
         
-        let rotors = rotorWirings.map { return Rotor(alphabet: alphabet, sequence: Array($0.characters)) }
+        let rotors = rotorWirings.map { return Rotor(alphabet: alphabet, sequence: Array($0)) }
         
-        let reflector = Rotor(alphabet: alphabet, sequence: Array("ejmzalyxvbwfcrquontspikhgd".characters))
+        let reflector = Rotor(alphabet: alphabet, sequence: Array("ejmzalyxvbwfcrquontspikhgd"))
         machine = EnigmaMachine(rotors: rotors , reflector: reflector)
         
     }
@@ -36,12 +36,12 @@ class OvoEnigmaMachine {
     /**
       Ignore all symbols that are not part of the lowercase alphabet.
     */
-    static func clean(message:String) -> String {
+    static func clean(message: String) -> String {
         
-        let lowercase = message.lowercaseString
+        let lowercase = message.lowercased()
         var cleanString = ""
-        for character in lowercase.characters {
-            if lowercaseAlphabet.containsString(String(character)) {
+        for character in lowercase {
+            if lowercaseAlphabet.range(of: String(character)) != nil  {
                 cleanString.append(character)
             }
         }
@@ -50,8 +50,8 @@ class OvoEnigmaMachine {
     
     
     func encrypt(message: String) -> String {
-        let inputSymbols = Array(message.lowercaseString.characters)
-        return String(machine.encrypt(inputSymbols))
+        let inputSymbols = Array(message.lowercased())
+        return String(machine.encrypt(message: inputSymbols))
     }
     
     

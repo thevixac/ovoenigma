@@ -13,16 +13,6 @@ import Nimble
 
 class AlphabetTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testAlphabetWithNumbers() {
         let a = Alphabet<Int>(orderedSymbols: [9,8,7,6,5,4,3,2,1,0])
         expect(a.getIndex(2)).to(equal(7))
@@ -42,7 +32,6 @@ class AlphabetTests: XCTestCase {
         expect(a.size()).to(equal(0))
     }
 }
-
 
 private enum Fruit : String {
     case Apple = "Apple"
